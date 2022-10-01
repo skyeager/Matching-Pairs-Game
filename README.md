@@ -1,4 +1,4 @@
-# Matching Pairs
+# Matching Pairs Game
 
 ## Date: 10/03/2022
 
@@ -14,18 +14,21 @@
 
 ### **_*Description*_**
 
-#### This project is centered on creating a matching pairs game. The Matching Pairs game integrates several programming concepts through the utilization of foundational programming languages: HTML, CSS, and Javascript. Programming concepts illustrated include understanding of scope, function parameters, events listeners, and proper syntax and well -organized code. This project ultimately delivers an accessible and interactive game while demonstrating an understanding of introductory programming languages and their relationships.
+#### This project is centered on creating a matching pairs game. The Matching Pairs game integrates several programming concepts through the utilization of foundational programming languages: HTML, CSS, and Javascript. Programming concepts illustrated include understanding of scope, function parameters, events listeners, proper syntax and well-organized code. This project ultimately delivers an accessible and interactive game while demonstrating an understanding of introductory programming languages and their relationships.
 
 ---
 
 ### **_Technologies Used_**
 
-\* Programming languages used
-\*CSS
-\*HTML
-\*Javascript
+- Programming languages:
+  <br />
+  CSS
+  <br />
+  HTML
+  <br />
+  Javascript
 
-\* jQuery/DOM manipulation
+- jQuery/DOM manipulation
 
 ---
 
@@ -35,15 +38,15 @@
 
 ---
 
-### **_Screenshots_**
+### **Image Board**
 
 <figcaption> Game Concept Inspiration</figcaption>
 
-![Image 1](https://j4r8d7d7.rocketcdn.me/wp-content/uploads/2020/03/JavaScript-pairs-game.png)
+![Game Concept Inspiration](https://j4r8d7d7.rocketcdn.me/wp-content/uploads/2020/03/JavaScript-pairs-game.png)
 
-<figcaption> Integrating HTML, JS, and CSS</figcaption>
+<figcaption> Programming Languages Used</figcaption>
 
-![Image 2](https://miro.medium.com/max/1200/1*l4xICbIIYlz1OTymWCoUTw.jpeg)
+![Utilizing HTML, JS, and CSS](https://miro.medium.com/max/1200/1*l4xICbIIYlz1OTymWCoUTw.jpeg)
 
 ---
 
@@ -59,8 +62,6 @@
 
 #### Game inspiration: [Mikke Goes Coding](https://mikkegoes.com/javascript-projects-for-beginners/)
 
-#### Image 1 credit: [Mikke Goes Coding](https://j4r8d7d7.rocketcdn.me/wp-content/uploads/2020/03/JavaScript-pairs-game.png)
+#### Game inspiration image credit: [Mikke Goes Coding](https://j4r8d7d7.rocketcdn.me/wp-content/uploads/2020/03/JavaScript-pairs-game.png)
 
-#### Image 2 credit: [Medium.com] (https://medium.com/level-up-web/amazingly-useful-html-css-and-javascript-tools-and-libraries-d73b10fbae29)
-
----
+#### Languages used image credit: [Medium](https://medium.com/level-up-web/amazingly-useful-html-css-and-javascript-tools-and-libraries-d73b10fbae29)
