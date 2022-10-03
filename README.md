@@ -28,7 +28,7 @@
   <br />
   Javascript
 
-- jQuery/DOM manipulation
+- DOM manipulation
 
 ---
 
