@@ -1,0 +1,18 @@
+.welcomeHeader{
+  font-family: Arial, Helvetica, sans-serif;
+  color:rgb(190, 190, 42)
+}
+
+.gamePageHeader{
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(190, 190, 42)
+
+}
+
+.welcomeBody{
+  background-color: rgb(79, 79, 186);
+}
+
+.gamePageBody{
+  background-color: rgb(79, 79, 186);
+}
