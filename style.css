@@ -1,39 +1,41 @@
 .welcomeHeader{
   font-family: Arial, Helvetica, sans-serif;
-  color:rgb(190, 190, 42)
+  color:black;
+}
+.welcomeBody{
+  background-color:  rgb(118, 118, 219);
 }
 
 .gamePageHeader{
   font-family: Arial, Helvetica, sans-serif;
-  color: rgb(190, 190, 42)
-
-}
-
-.welcomeBody{
-  background-color: rgb(79, 79, 186);
+  color: black;
 }
 
 .gamePageBody{
-  background-color: rgb(79, 79, 186);
+  background-color: rgb(118, 118, 219);
 }
 
 .container{
   display: grid;
   border: 1px solid black;
-  grid-template-columns: 20;
-  grid-template-rows: 20px;
-  justify-content:center;
+  grid-template-columns: 50px;
+  grid-template-rows: 50px;
+  margin:200px;
 }
 
 .front{
-background-color: rgb(219, 55, 55)
+background-color: rgb(219, 55, 55);
+display: none;
+height: 100%;
 }
 
 .back{
-background-color: rgb(133, 133, 35)
+background-color: rgb(133, 133, 35);
+display: block;
+height: 100%;
 }
 
-.red{
+/* .red{
 
 }
 
@@ -43,7 +45,7 @@ background-color: rgb(133, 133, 35)
 
 .messageSpace{
 
-}
+} */
 
 #welcomePageButton{
   border: 1px solid black;
