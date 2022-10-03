@@ -1,26 +1,34 @@
 //////////////////// Global Variables////////////////////
 
-const card = document.querySelector('.card')
+const allCards = document.querySelectorAll('.cardBack')
 const front = document.querySelector('.front')
 const back = document.querySelector('.back')
-// let cardFront = document.querySelectorAll('.front')
-// let cardBack = document.querySelectorAll('.back')
-// let cardRed = document
+console.log(allCards)
 
-let changeDisplay = () => {
-  back.style.display = 'none'
-  front.style.display = 'block'
+const changeDisplay = (e) => {
+  e.target.classList.toggle('blue')
 }
 
 //////////////Event Listeners////////////////
 
-//will need to change this once figure out how to make .back display instead of .card in CSS
-card.addEventListener('click', changeDisplay)
+allCards.forEach((card) => {
+  card.addEventListener('click', changeDisplay)
+})
 
-// card.addEventListener('click')
+//*****LOGIC TO IDENTIFY FLIPPED CARD*****
+// const addClass= (e)=>{
+//   e.target.classList.add('flipped')
+// }
+// allCards.forEach((card)=>{
+//   card.addEventListener('click',addClass)
+// })
 
-// //adding class of .flipped to card that is clicked
-// card.addEventListener('click', document.classList.add('.flippped'))
-//will later need to remove .flipped class?
+//******welcome button*****//////
+// const letsPlay=document.querySelector('welcomeButton')
+// letsPlay.addEventListener('click', )
 
 /////////////////////Game Functions////////////////
+
+// let playGame=()=>{
+//   if (this.class==="blue")
+// }
