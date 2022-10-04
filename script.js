@@ -5,8 +5,17 @@ const front = document.querySelector('.front')
 const back = document.querySelector('.back')
 console.log(allCards)
 
+const colors = ['red', 'red', 'blue', 'blue']
+
 const changeDisplay = (e) => {
-  e.target.classList.toggle('blue')
+  const cardPick = e.target
+  if (cardPick.classList.contains('flipped')) {
+    return
+  }
+  const randomIndex = Math.floor(Math.random() * colors.length)
+  const color = colors[randomIndex]
+  colors.splice(randomIndex, 1)
+  cardPick.classList.toggle(color)
 }
 
 //////////////Event Listeners////////////////
@@ -22,7 +31,6 @@ const addFlippedClass = (e) => {
 allCards.forEach((card) => {
   card.addEventListener('click', addFlippedClass)
 })
-console.log(allCards)
 
 //******WELCOME BUTTON*****//////
 // const letsPlay=document.querySelector('welcomeButton')
@@ -30,6 +38,17 @@ console.log(allCards)
 
 /////////////////////Game Functions////////////////
 
-// let playGame=()=>{
-//   if (this.class==="blue")
+// let playGame = () => {
+//   if (this.class === 'flipped') {
+//   }
 // }
+// if (lastCardPicked === currentCardPicked) {
+
+const randomIndex = Math.floor(Math.random() * colors.length)
+const color = colors[randomIndex]
+
+let playGame = () => {
+  if (color === color) {
+    alert("It's a match!")
+  }
+}
