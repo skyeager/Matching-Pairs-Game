@@ -16,14 +16,15 @@ allCards.forEach((card) => {
 })
 
 //*****LOGIC TO IDENTIFY FLIPPED CARD*****
-// const addClass= (e)=>{
-//   e.target.classList.add('flipped')
-// }
-// allCards.forEach((card)=>{
-//   card.addEventListener('click',addClass)
-// })
+const addFlippedClass = (e) => {
+  e.target.classList.add('flipped')
+}
+allCards.forEach((card) => {
+  card.addEventListener('click', addFlippedClass)
+})
+console.log(allCards)
 
-//******welcome button*****//////
+//******WELCOME BUTTON*****//////
 // const letsPlay=document.querySelector('welcomeButton')
 // letsPlay.addEventListener('click', )
 
