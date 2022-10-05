@@ -4,6 +4,7 @@ const allCards = document.querySelectorAll('.cardBack')
 const front = document.querySelector('.front')
 const back = document.querySelector('.back')
 const button = document.getElementById('againButton')
+const messageSpace = document.querySelector('.messageSpace')
 
 let gameOver = false
 
@@ -37,20 +38,27 @@ let colorTwo
 let cardOne
 let cardTwo
 let selectedColors = []
+let totalMatches = 0
 
 let checkForMatch = () => {
   if (selectedColors.length === 2) {
     if (selectedColors[0] === selectedColors[1]) {
       console.log("It's a match!")
-      selectedColors = []
+      // cardOne.classList.toggle('flipped')
+      // cardTwo.classList.toggle('flipped')
+      // cardOne.classList.toggle(colorOne)
+      // cardTwo.classList.toggle(colorTwo)
       cardOne = null
       cardTwo = null
       colorOne = null
       colorTwo = null
-      cardOne.classList.toggle('flipped')
-      cardTwo.classList.toggle('flipped')
-      cardOne.classList.toggle(colorOne)
-      cardTwo.classList.toggle(colorTwo)
+      selectedColors = []
+      messageSpace.innerText = "It's a match!"
+      console.log(messageSpace.innerText)
+      totalMatches += 1
+      if (totalMatches === 4) {
+        messageSpace.innerText = 'Game over!'
+      }
       return
     } else {
       console.log('not a match')
@@ -67,20 +75,12 @@ let checkForMatch = () => {
         cardTwo = null
         colorOne = null
         colorTwo = null
-      }, 2000)
+        messageSpace.innerText = 'Not a match! Try again!'
+      }, 1000)
       return
     }
   }
 }
-// let totalMatches=0
-// totalMatches+= 1
-// if (totalMatches === 4) {
-//   console.log('Game won!')
-//   gameOver = true
-
-// if (gameOver === true) {
-//   alert('Game over!')
-// }
 
 const changeDisplay = (e) => {
   if (e.target.classList.contains('flipped')) {
@@ -121,5 +121,10 @@ button.addEventListener('click', () => location.reload())
 /////////////////////Game Functions////////////////
 // TO DO
 
-//tonight: message board
-//tomorrow: timer
+//tonight:
+//message board
+//game over for when all matches found
+//understand code--study it!
+
+//tomorrow:
+//timer

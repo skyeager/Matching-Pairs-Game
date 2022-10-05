@@ -52,7 +52,6 @@ body{
   grid-template-columns: 125px 125px 125px 125px;
   grid-template-rows: 100px 100px;
   gap: 10px;
-  /* animation: 1s ease-out 0s 1 slideInFromLeft; */
 }
 
 .playArea{
@@ -115,12 +114,13 @@ outline: 2px solid black;
   margin-top: 200px;
   display: grid;
   line-height: 50px;
-  animation: 1s ease-out 0s 1 slideInFromLeft;
+  /* animation: 1s ease-out 0s 1 slideInFromLeft; */
 }
 
 
 .messageSpace{
-  position: absolute;
+  display: flex;
+  justify-content: right;
   top: 325px;
   bottom: 100px;
   right: 50px;
@@ -132,4 +132,17 @@ outline: 2px solid black;
   padding-top: 50px;
   padding-bottom: 50px;
   font-family: 'Amatic SC';
+}
+
+/* 
+.playArea{
+  width: 100vw;
+  display: flex;
+  justify-content: center; */
+
+.messageBox{
+  font-family: 'Amatic SC';
+  display: flex;
+  justify-content: right;
+  margin-right: 50px;
 }
