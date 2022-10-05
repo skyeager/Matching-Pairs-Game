@@ -3,52 +3,96 @@
 const allCards = document.querySelectorAll('.cardBack')
 const front = document.querySelector('.front')
 const back = document.querySelector('.back')
-console.log(allCards)
+const button = document.getElementById('againButton')
 
-const colors = ['red', 'red', 'blue', 'blue']
+const colors = ['red', 'red', 'blue', 'blue', 'purple', 'purple']
+
+let colorOne
+let colorTwo
+let cardOne
+let cardTwo
+let selectedColors = []
+
+let checkForMatch = () => {
+  if (selectedColors.length === 2) {
+    if (selectedColors[0] === selectedColors[1]) {
+      console.log("It's a match!")
+      selectedColors = []
+      cardOne = null
+      cardTwo = null
+      colorOne = null
+      colorTwo = null
+      return
+      //  play game again
+    } else {
+      console.log('not a match')
+      setTimeout(() => {
+        cardOne.classList.toggle('flipped')
+        cardOne.classList.toggle(colorOne)
+        cardOne.classList.add('cardBack')
+        cardTwo.classList.toggle('flipped')
+        cardTwo.classList.toggle(colorTwo)
+        cardTwo.classList.add('cardBack')
+        selectedColors = []
+        cardOne = null
+        cardTwo = null
+        colorOne = null
+        colorTwo = null
+      }, 1000)
+      return
+    }
+  }
+}
 
 const changeDisplay = (e) => {
-  const cardPick = e.target
-  if (cardPick.classList.contains('flipped')) {
+  if (e.target.classList.contains('flipped')) {
+    return
+  }
+  if (cardTwo) {
     return
   }
   const randomIndex = Math.floor(Math.random() * colors.length)
-  const color = colors[randomIndex]
-  colors.splice(randomIndex, 1)
-  cardPick.classList.toggle(color)
+  if (!cardOne) {
+    cardOne = e.target
+    colorOne = colors[randomIndex]
+    cardOne.classList.toggle(colorOne)
+    selectedColors.push(colorOne)
+  } else {
+    cardTwo = e.target
+    colorTwo = colors[randomIndex]
+    cardTwo.classList.toggle(colorTwo)
+    selectedColors.push(colorTwo)
+    checkForMatch()
+  }
 }
 
 //////////////Event Listeners////////////////
+const addFlippedClass = (e) => {
+  e.target.classList.add('flipped')
+}
 
 allCards.forEach((card) => {
   card.addEventListener('click', changeDisplay)
 })
 
-//*****LOGIC TO IDENTIFY FLIPPED CARD*****
-const addFlippedClass = (e) => {
-  e.target.classList.add('flipped')
-}
 allCards.forEach((card) => {
   card.addEventListener('click', addFlippedClass)
 })
 
-//******WELCOME BUTTON*****//////
-// const letsPlay=document.querySelector('welcomeButton')
-// letsPlay.addEventListener('click', )
-
 /////////////////////Game Functions////////////////
 
-// let playGame = () => {
-//   if (this.class === 'flipped') {
-//   }
-// }
-// if (lastCardPicked === currentCardPicked) {
+// TO DO:
+// **delay alert("it's a match!")
 
-const randomIndex = Math.floor(Math.random() * colors.length)
-const color = colors[randomIndex]
+////**play again button////
 
-let playGame = () => {
-  if (color === color) {
-    alert("It's a match!")
-  }
-}
+// button.addEventListener('click', location.reload)
+
+// TONIGHT:
+// TO DO
+// declaring a second match
+// finish play game function
+
+// DID
+//linked my two HTML pages with a button
+//worked on my play game function to identify if two squares matched or not

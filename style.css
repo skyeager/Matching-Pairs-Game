@@ -1,5 +1,6 @@
 .welcomeHeader{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Amatic SC';
+  font-size: 25px;
   color:black;
   text-align: center;
   margin-top: 50px;
@@ -13,7 +14,8 @@
 }
 
 .gamePageHeader{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Amatic SC';
+  font-size: 40px;;
   color: black;
   text-align: center;
 }
@@ -24,10 +26,12 @@
 
 .container{
   display: grid;
-  border: 1px solid black;
-  grid-template-columns: 50px 50px;
-  grid-template-rows: 50px 50px;
+  width: 450px;
+  height: 200px;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: 100px 100px;
   margin:200px;
+  gap: 7px;
 }
 
 .front{
@@ -36,7 +40,7 @@
 }
 
 .cardBack{
-background-color: rgb(194, 194, 86);
+background-color: rgb(191, 191, 98);
 display: block;
 height: 100%;
 }
@@ -49,22 +53,14 @@ background-color: rgb(219, 55, 55);
   background-color: rgb(12, 61, 196);
 }
 
-
-/* .red{
-
+.purple{
+  background-color: rgb(161, 2, 161);
 }
 
-.timer{
-
-}
-
-.messageSpace{
-
-} */
 
 #welcomeButton{
   border: 1px solid black;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Amatic SC';
   width: 100px;
   height: 50px;
   margin: auto;
@@ -74,10 +70,26 @@ background-color: rgb(219, 55, 55);
 
 #againButton{
   border: 1px solid black;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Amatic SC';
   width: 100px;
   height: 50px;
   margin: auto;
   display: grid;
   line-height: 50px;
 }
+
+
+/* .messageSpace{
+  position: absolute;
+  top: 325px;
+  bottom: 100px;
+  right: 50px;
+  border: 2px solid black;
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: 'Amatic SC';
+} */
