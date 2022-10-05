@@ -38,59 +38,50 @@ let cardOne
 let cardTwo
 let selectedColors = []
 
-//randomize colors array
-//Shows one color more than twice (i.e. blue square can show up 3 times)
-//cant click some squares (since expanding to 6 or 8)
-//boxes arent staying the same color (if dont get a match)
-//if card1 + card2 are the same, increase correct guesses by 1, if 4 correct guesses=win
-//random array of colors, create divs with dom manipulation that ties to an attribute (ex. color=purple)
-//click card, get index of location in DOM, node list that matches length of color array--link div with index of colors array
-
 let checkForMatch = () => {
-  // let correctMatches=0
   if (selectedColors.length === 2) {
     if (selectedColors[0] === selectedColors[1]) {
       console.log("It's a match!")
-      // correctMatches+= 1
       selectedColors = []
       cardOne = null
       cardTwo = null
       colorOne = null
       colorTwo = null
-    }
-    // if (correctMatches === 4) {
-    //   console.log('Game won!')
-    //   gameOver = true
-    return
-  } else {
-    console.log('not a match')
-    setTimeout(() => {
       cardOne.classList.toggle('flipped')
-      cardOne.classList.toggle(colorOne)
-      cardOne.classList.add('cardBack')
       cardTwo.classList.toggle('flipped')
+      cardOne.classList.toggle(colorOne)
       cardTwo.classList.toggle(colorTwo)
-      cardTwo.classList.add('cardBack')
-      selectedColors = []
-      cardOne = null
-      cardTwo = null
-      colorOne = null
-      colorTwo = null
-    }, 2000)
-    return
+      return
+    } else {
+      console.log('not a match')
+      setTimeout(() => {
+        selectedColors = []
+        cardOne.classList.toggle('flipped')
+        cardOne.classList.toggle(colorOne)
+        cardOne.classList.add('cardBack')
+        cardTwo.classList.toggle('flipped')
+        cardTwo.classList.toggle(colorTwo)
+        cardTwo.classList.add('cardBack')
+        selectedColors = []
+        cardOne = null
+        cardTwo = null
+        colorOne = null
+        colorTwo = null
+      }, 2000)
+      return
+    }
   }
 }
+// let totalMatches=0
+// totalMatches+= 1
+// if (totalMatches === 4) {
+//   console.log('Game won!')
+//   gameOver = true
 
 // if (gameOver === true) {
-//   return
+//   alert('Game over!')
 // }
 
-//new random index created every time changeDisplay is run
-//randomized array set to cards
-
-//create random array of colors at game start
-//how to link them colors to cards on board (link 0's)
-//change changeDisplay function to get color of card flipped,
 const changeDisplay = (e) => {
   if (e.target.classList.contains('flipped')) {
     return
@@ -129,4 +120,6 @@ button.addEventListener('click', () => location.reload())
 
 /////////////////////Game Functions////////////////
 // TO DO
-//fix view when page size changes (i.e. full page size versus half screen size)
+
+//tonight: message board
+//tomorrow: timer

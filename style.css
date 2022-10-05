@@ -11,17 +11,34 @@
 }
 .welcomeBody{
   background-color:  rgb(118, 118, 219);
+  margin: 100px 25px;
+}
+
+.welcomeP{
+  padding:50px;
+  font-size: 30px;
+  line-height: 45px;
 }
 
 body{
   text-align: center;
 }
 
-.gamePageHeader{
-  font-family: 'Amatic SC';
-  font-size: 40px;;
-  color: black;
-  text-align: center;
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+   
+  .gamePageHeader{
+    font-family: 'Amatic SC';
+    font-size: 40px;;
+    color: black;
+    text-align: center;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
 .gamePageBody{
@@ -35,6 +52,7 @@ body{
   grid-template-columns: 125px 125px 125px 125px;
   grid-template-rows: 100px 100px;
   gap: 10px;
+  /* animation: 1s ease-out 0s 1 slideInFromLeft; */
 }
 
 .playArea{
@@ -97,6 +115,7 @@ outline: 2px solid black;
   margin-top: 200px;
   display: grid;
   line-height: 50px;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
 
