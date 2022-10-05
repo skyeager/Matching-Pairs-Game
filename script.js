@@ -5,7 +5,16 @@ const front = document.querySelector('.front')
 const back = document.querySelector('.back')
 const button = document.getElementById('againButton')
 
-const colors = ['red', 'red', 'blue', 'blue', 'purple', 'purple']
+const colors = [
+  'red',
+  'red',
+  'blue',
+  'blue',
+  'purple',
+  'purple',
+  'green',
+  'green'
+]
 
 let colorOne
 let colorTwo
@@ -23,7 +32,6 @@ let checkForMatch = () => {
       colorOne = null
       colorTwo = null
       return
-      //  play game again
     } else {
       console.log('not a match')
       setTimeout(() => {
@@ -38,7 +46,7 @@ let checkForMatch = () => {
         cardTwo = null
         colorOne = null
         colorTwo = null
-      }, 1000)
+      }, 2000)
       return
     }
   }
@@ -79,20 +87,11 @@ allCards.forEach((card) => {
   card.addEventListener('click', addFlippedClass)
 })
 
+button.addEventListener('click', () => location.reload())
+
 /////////////////////Game Functions////////////////
-
-// TO DO:
-// **delay alert("it's a match!")
-
-////**play again button////
-
-// button.addEventListener('click', location.reload)
-
-// TONIGHT:
 // TO DO
 // declaring a second match
 // finish play game function
 
-// DID
-//linked my two HTML pages with a button
-//worked on my play game function to identify if two squares matched or not
+//can show one color more than twice (i.e. blue square can show up 3 times)

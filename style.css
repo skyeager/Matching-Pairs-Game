@@ -26,9 +26,9 @@
 
 .container{
   display: grid;
-  width: 450px;
+  width: 500px;
   height: 200px;
-  grid-template-columns: 150px 150px 150px;
+  grid-template-columns: 125px 125px 125px 125px;
   grid-template-rows: 100px 100px;
   margin:200px;
   gap: 7px;
@@ -43,18 +43,27 @@
 background-color: rgb(191, 191, 98);
 display: block;
 height: 100%;
+outline: thin solid black;
 }
 
 .red{
-background-color: rgb(219, 55, 55);
+background-color: rgb(220, 86, 86);
+outline: thin solid black;
 }
 
 .blue{
-  background-color: rgb(12, 61, 196);
+  background-color: rgb(53, 98, 220);
+  outline: thin solid black;
 }
 
 .purple{
-  background-color: rgb(161, 2, 161);
+  background-color: rgb(187, 108, 187);
+  outline: thin solid black;
+}
+
+.green{
+  background-color: rgb(116, 197, 116);
+  outline: thin solid black;
 }
 
 
@@ -70,6 +79,7 @@ background-color: rgb(219, 55, 55);
 
 #againButton{
   border: 1px solid black;
+  font-size: 24px;
   font-family: 'Amatic SC';
   width: 100px;
   height: 50px;
