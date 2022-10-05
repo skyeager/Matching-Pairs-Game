@@ -18,7 +18,9 @@ const colors = [
   'green'
 ]
 
-const shuffledColors = Math.floor(Math.random() * colors.length)
+const shuffledColors = () => {
+  Math.floor(Math.random() * colors.length)
+}
 
 shuffledColors[0] = document.body.children[1].children[0]
 shuffledColors[1] = document.body.children[1].children[1]
@@ -90,7 +92,7 @@ let checkForMatch = () => {
 //how to link them colors to cards on board (link 0's)
 //change changeDisplay function to get color of card flipped,
 const changeDisplay = (e) => {
-  shuffledColors
+  shuffledColors()
   if (e.target.classList.contains('flipped')) {
     return
   }
@@ -128,4 +130,4 @@ button.addEventListener('click', () => location.reload())
 
 /////////////////////Game Functions////////////////
 // TO DO
-// declaring a second match
+//fix view when page size changes (i.e. full page size versus half screen size)
