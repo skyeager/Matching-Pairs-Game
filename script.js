@@ -18,18 +18,19 @@ const colors = [
   'green'
 ]
 
-const shuffledColors = () => {
-  Math.floor(Math.random() * colors.length)
-}
+const shuffledColors = []
 
-shuffledColors[0] = document.body.children[1].children[0]
-shuffledColors[1] = document.body.children[1].children[1]
-shuffledColors[2] = document.body.children[1].children[2]
-shuffledColors[2] = document.body.children[1].children[3]
-shuffledColors[4] = document.body.children[1].children[4]
-shuffledColors[5] = document.body.children[1].children[5]
-shuffledColors[6] = document.body.children[1].children[6]
-shuffledColors[7] = document.body.children[1].children[7]
+const shuffle = () => {
+  for (let i = 0; i < 8; i++) {
+    let random = Math.floor(Math.random() * colors.length)
+    shuffledColors.push(colors[random])
+    colors.splice(random, 1)
+  }
+  for (let i = 0; i < allCards.length; i++) {
+    allCards[i].setAttribute('color', shuffledColors[i])
+  }
+}
+shuffle()
 
 let colorOne
 let colorTwo
@@ -46,38 +47,37 @@ let selectedColors = []
 //click card, get index of location in DOM, node list that matches length of color array--link div with index of colors array
 
 let checkForMatch = () => {
-  // let correctGuesses=0
+  // let correctMatches=0
   if (selectedColors.length === 2) {
     if (selectedColors[0] === selectedColors[1]) {
       console.log("It's a match!")
-      // correctGuesses+= 1
+      // correctMatches+= 1
       selectedColors = []
       cardOne = null
       cardTwo = null
       colorOne = null
       colorTwo = null
-      // if (correctGuesses === 4) {
-      //   console.log('Game won!')
-      //   gameOver = true
-      // }
-      return
-    } else {
-      console.log('not a match')
-      setTimeout(() => {
-        cardOne.classList.toggle('flipped')
-        cardOne.classList.toggle(colorOne)
-        cardOne.classList.add('cardBack')
-        cardTwo.classList.toggle('flipped')
-        cardTwo.classList.toggle(colorTwo)
-        cardTwo.classList.add('cardBack')
-        selectedColors = []
-        cardOne = null
-        cardTwo = null
-        colorOne = null
-        colorTwo = null
-      }, 2000)
-      return
     }
+    // if (correctMatches === 4) {
+    //   console.log('Game won!')
+    //   gameOver = true
+    return
+  } else {
+    console.log('not a match')
+    setTimeout(() => {
+      cardOne.classList.toggle('flipped')
+      cardOne.classList.toggle(colorOne)
+      cardOne.classList.add('cardBack')
+      cardTwo.classList.toggle('flipped')
+      cardTwo.classList.toggle(colorTwo)
+      cardTwo.classList.add('cardBack')
+      selectedColors = []
+      cardOne = null
+      cardTwo = null
+      colorOne = null
+      colorTwo = null
+    }, 2000)
+    return
   }
 }
 
@@ -92,7 +92,6 @@ let checkForMatch = () => {
 //how to link them colors to cards on board (link 0's)
 //change changeDisplay function to get color of card flipped,
 const changeDisplay = (e) => {
-  shuffledColors()
   if (e.target.classList.contains('flipped')) {
     return
   }

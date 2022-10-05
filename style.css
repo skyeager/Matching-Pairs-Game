@@ -13,6 +13,10 @@
   background-color:  rgb(118, 118, 219);
 }
 
+body{
+  text-align: center;
+}
+
 .gamePageHeader{
   font-family: 'Amatic SC';
   font-size: 40px;;
@@ -26,13 +30,17 @@
 
 .container{
   display: grid;
-  width: 500px;
-  height: 200px;
+  width: 530px;
+  height: 210px;
   grid-template-columns: 125px 125px 125px 125px;
   grid-template-rows: 100px 100px;
   gap: 10px;
-  margin-left: 700px;
-  margin-top: 100px;
+}
+
+.playArea{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
 
 .front{
