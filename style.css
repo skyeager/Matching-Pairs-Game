@@ -11,8 +11,6 @@
 }
 .welcomeBody{
   background-color:  rgb(118, 118, 219);
-  margin: 100px 25px;
-  height: 100vh;
 }
 
 .welcomeP{
@@ -32,7 +30,7 @@ body{
     transform: translateX(0);
   }
 }
-   
+
   .gamePageHeader{
     font-family: 'Amatic SC';
     font-size: 40px;;
