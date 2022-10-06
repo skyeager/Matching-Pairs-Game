@@ -8,15 +8,14 @@
   margin-right: 75px;
   line-height: 30px;
   border: 1px solid black;
-  height: 80vh;
 }
 .welcomeBody{
   background-color:  rgb(118, 118, 219);
   margin: 100px 25px;
+  height: 100vh;
 }
 
 .welcomeP{
-  padding:50px;
   font-size: 30px;
   line-height: 45px;
 }
