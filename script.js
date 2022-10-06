@@ -1,4 +1,4 @@
-//////////////////// GLOBAL VARIABLES////////////////////
+///////////////// GLOBAL VARIABLES/////////////////
 
 const allCards = document.querySelectorAll('.cardBack')
 const front = document.querySelector('.front')
@@ -115,22 +115,3 @@ allCards.forEach((card) => {
 })
 
 button.addEventListener('click', () => location.reload())
-
-//Today:
-//message board displaying messages
-//message board centered
-//figuring out my timer
-
-//Tonight:
-//finish my timer/make visually appealing
-
-// TIMER
-// const rainbow = () => {
-//   console.log("Time's up!")
-// }
-
-// let setTimeout
-
-// something.addEventListener('click', setTimeout)
-
-// setTimeout(rainbow, 1000)
