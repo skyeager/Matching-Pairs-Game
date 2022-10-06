@@ -114,35 +114,34 @@ outline: 2px solid black;
   margin-top: 200px;
   display: grid;
   line-height: 50px;
-  /* animation: 1s ease-out 0s 1 slideInFromLeft; */
 }
 
 
+/* /div */
 .messageSpace{
   display: flex;
-  justify-content: right;
-  top: 325px;
-  bottom: 100px;
-  right: 50px;
+  align-items: center;
+  justify-content: center;
   border: 2px solid black;
-  height: 50px;
-  width: 200px;
-  text-align: center;
-  font-size: 30px;
-  padding-top: 50px;
-  padding-bottom: 50px;
   font-family: 'Amatic SC';
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  bottom: 275px;
+  left: 600px;
+  font-size: 40px;
+  
 }
 
-/* 
-.playArea{
-  width: 100vw;
-  display: flex;
-  justify-content: center; */
-
-.messageBox{
+.messageContainer{
+  position: relative;
   font-family: 'Amatic SC';
-  display: flex;
+
+
+/* .messageBox{
+  font-family: 'Amatic SC';
+  display: grid;
   justify-content: right;
   margin-right: 50px;
-}
+  margin-bottom: -200px;
+} */
