@@ -43,6 +43,11 @@ body{
 
 .gamePageBody{
   background-color: rgb(118, 118, 219);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 97vh;
 }
 
 .container{
@@ -110,38 +115,23 @@ outline: 2px solid black;
   font-family: 'Amatic SC';
   width: 100px;
   height: 50px;
-  margin: auto;
-  margin-top: 200px;
-  display: grid;
   line-height: 50px;
 }
 
-
-/* /div */
 .messageSpace{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid black;
-  font-family: 'Amatic SC';
-  width: 200px;
-  height: 150px;
-  position: absolute;
-  bottom: 275px;
-  left: 600px;
   font-size: 40px;
-  
+  font-family: 'Amatic SC';
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .messageContainer{
-  position: relative;
+  border: 2px solid black;
+  width: 200px;
+  height: 150px;
   font-family: 'Amatic SC';
-
-
-/* .messageBox{
-  font-family: 'Amatic SC';
-  display: grid;
-  justify-content: right;
-  margin-right: 50px;
-  margin-bottom: -200px;
-} */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
