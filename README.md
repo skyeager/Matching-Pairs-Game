@@ -45,8 +45,7 @@
 ![Game Concept Inspiration](https://j4r8d7d7.rocketcdn.me/wp-content/uploads/2020/03/JavaScript-pairs-game.png)
 
 <figcaption> Game Final Version</figcaption>
-
-![Game Concept Inspiration] (<img width="664" alt="Screen Shot 2022-10-06 at 4 11 48 PM" src="https://user-images.githubusercontent.com/95553482/194410276-a8df3117-3c4a-4ac0-bba1-64f8941053fe.png">)
+ <img width="664" alt="Screen Shot 2022-10-06 at 4 11 48 PM" src="https://user-images.githubusercontent.com/95553482/194410276-a8df3117-3c4a-4ac0-bba1-64f8941053fe.png">
 
 <figcaption> Programming Languages Used</figcaption>
 
