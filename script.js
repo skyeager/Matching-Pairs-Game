@@ -123,3 +123,14 @@ button.addEventListener('click', () => location.reload())
 
 //Tonight:
 //finish my timer/make visually appealing
+
+// TIMER
+// const rainbow = () => {
+//   console.log("Time's up!")
+// }
+
+// let setTimeout
+
+// something.addEventListener('click', setTimeout)
+
+// setTimeout(rainbow, 1000)
