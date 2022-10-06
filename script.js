@@ -1,4 +1,4 @@
-//////////////////// Global Variables////////////////////
+//////////////////// GLOBAL VARIABLES////////////////////
 
 const allCards = document.querySelectorAll('.cardBack')
 const front = document.querySelector('.front')
@@ -18,8 +18,16 @@ const colors = [
   'green',
   'green'
 ]
+let colorOne
+let colorTwo
+let cardOne
+let cardTwo
+let selectedColors = []
+let totalMatches = 0
 
 const shuffledColors = []
+
+///////////GAME FUNCTIONS///////////
 
 const shuffle = () => {
   for (let i = 0; i < 8; i++) {
@@ -33,21 +41,10 @@ const shuffle = () => {
 }
 shuffle()
 
-let colorOne
-let colorTwo
-let cardOne
-let cardTwo
-let selectedColors = []
-let totalMatches = 0
-
 let checkForMatch = () => {
   if (selectedColors.length === 2) {
     if (selectedColors[0] === selectedColors[1]) {
       console.log("It's a match!")
-      // cardOne.classList.toggle('flipped')
-      // cardTwo.classList.toggle('flipped')
-      // cardOne.classList.toggle(colorOne)
-      // cardTwo.classList.toggle(colorTwo)
       cardOne = null
       cardTwo = null
       colorOne = null
@@ -103,7 +100,8 @@ const changeDisplay = (e) => {
   }
 }
 
-//////////////Event Listeners////////////////
+//////////////EVENT LISTENERS////////////////
+
 const addFlippedClass = (e) => {
   e.target.classList.add('flipped')
 }
@@ -118,13 +116,10 @@ allCards.forEach((card) => {
 
 button.addEventListener('click', () => location.reload())
 
-/////////////////////Game Functions////////////////
-// TO DO
+//Today:
+//message board displaying messages
+//message board centered
+//figuring out my timer
 
-//tonight:
-//message board
-//game over for when all matches found
-//understand code--study it!
-
-//tomorrow:
-//timer
+//Tonight:
+//finish my timer/make visually appealing
