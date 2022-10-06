@@ -1,12 +1,10 @@
-///////////////// GLOBAL VARIABLES/////////////////
+///////////// GLOBAL VARIABLES/////////////
 
 const allCards = document.querySelectorAll('.cardBack')
 const front = document.querySelector('.front')
 const back = document.querySelector('.back')
 const button = document.getElementById('againButton')
 const messageSpace = document.querySelector('.messageSpace')
-
-let gameOver = false
 
 const colors = [
   'red',
@@ -18,13 +16,13 @@ const colors = [
   'green',
   'green'
 ]
+
 let colorOne
 let colorTwo
 let cardOne
 let cardTwo
 let selectedColors = []
 let totalMatches = 0
-
 const shuffledColors = []
 
 ///////////GAME FUNCTIONS///////////
