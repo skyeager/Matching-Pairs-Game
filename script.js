@@ -1,8 +1,6 @@
 ///////////// GLOBAL VARIABLES/////////////
 
 const allCards = document.querySelectorAll('.cardBack')
-const front = document.querySelector('.front')
-const back = document.querySelector('.back')
 const button = document.getElementById('againButton')
 const messageSpace = document.querySelector('.messageSpace')
 
