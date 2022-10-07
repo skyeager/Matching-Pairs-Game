@@ -14,7 +14,7 @@
 
 ### **_*Description*_**
 
-#### This project is centered on creating a matching pairs game. The Matching Pairs game integrates several programming concepts through the utilization of foundational programming languages: HTML, CSS, and Javascript. Programming concepts illustrated include understanding of scope, function parameters, events listeners, proper syntax and well-organized code. This project ultimately delivers an accessible and interactive game while demonstrating an understanding of introductory programming languages and their relationships.
+#### This project is based on creating a matching pairs game. The Matching Pairs game several integrates programming concepts through the integration of foundational programming languages: HTML, CSS, and Javascript. Programming concepts illustrated include understanding of scope, function parameters, events listeners, proper syntax and well-organized code. This project ultimately delivers an accessible and interactive game while demonstrating an understanding of introductory programming languages and their relationships.
 
 ---
 
@@ -38,7 +38,7 @@
 
 ### **_Getting Started_**
 
-#### Players are presented with eight face-down cards and are tasked with finding four matching pairs of cards. By clicking on a face down card, players reveal the colored side of the card. The player can then flip a second card over in attempts to find a match. If the two cards do not match, they will flip back to face-down. If the cards match, they will be deactivated from the board. The player then continues to try to find the remaining matches. This is a one player game where the gamer tries to complete the game as fast as they can against a timer.
+#### Players are presented with eight face-down cards and are tasked with finding four matching pairs of cards. By clicking on a face down card, players reveal the colored side of the card. The player can then flip a second card over in attempts to find a match. If the two cards do not match, they will flip back to face-down. If the cards match, they will be deactivated from the board. The player then continues to try to find the remaining matches. This is a one player game where the gamer tries to complete the game as fast as they can.
 
 ---
 
@@ -59,9 +59,10 @@
 
 ### **_Future Updates_**
 
-- [ ] Sound effects for clicks and matches found
-- [ ] Animation effect for page loading
-- [ ] Scoreboard displaying fastest time
+- [ ] Timer to track the time taken to find all matches.
+- [ ] Sound effects for clicks and matches found.
+- [ ] Animation effect for page loading.
+- [ ] Scoreboard displaying fastest time.
 
 ---
 

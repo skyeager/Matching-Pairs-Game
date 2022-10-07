@@ -42,21 +42,18 @@ shuffle()
 let checkForMatch = () => {
   if (selectedColors.length === 2) {
     if (selectedColors[0] === selectedColors[1]) {
-      console.log("It's a match!")
       cardOne = null
       cardTwo = null
       colorOne = null
       colorTwo = null
       selectedColors = []
       messageSpace.innerText = "It's a match!"
-      console.log(messageSpace.innerText)
       totalMatches += 1
       if (totalMatches === 4) {
         messageSpace.innerText = 'Game over!'
       }
       return
     } else {
-      console.log('not a match')
       setTimeout(() => {
         selectedColors = []
         cardOne.classList.remove('flipped')
