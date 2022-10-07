@@ -59,10 +59,10 @@ let checkForMatch = () => {
       console.log('not a match')
       setTimeout(() => {
         selectedColors = []
-        cardOne.classList.toggle('flipped')
+        cardOne.classList.remove('flipped')
         cardOne.classList.toggle(colorOne)
         cardOne.classList.add('cardBack')
-        cardTwo.classList.toggle('flipped')
+        cardTwo.classList.remove('flipped')
         cardTwo.classList.toggle(colorTwo)
         cardTwo.classList.add('cardBack')
         selectedColors = []
@@ -101,6 +101,9 @@ const changeDisplay = (e) => {
 //////////////EVENT LISTENERS////////////////
 
 const addFlippedClass = (e) => {
+  if (cardTwo) {
+    return
+  }
   e.target.classList.add('flipped')
 }
 
